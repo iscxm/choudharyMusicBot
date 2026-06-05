@@ -22,14 +22,14 @@ class Config:
         self.SESSION2 = getenv("SESSION2", None)
         self.SESSION3 = getenv("SESSION3", None)
 
-        self.SUPPORT_CHANNEL = "https://t.me/masoomupdate"
-        self.SUPPORT_CHAT = "https://t.me/SxNoii"
+        self.SUPPORT_CHANNEL = "https://t.me/link_ka_adda1"
+        self.SUPPORT_CHAT = "https://t.me/TechofySupport"
 
         self.AUTO_END: bool = getenv("AUTO_END", True)
         self.AUTO_LEAVE: bool = getenv("AUTO_LEAVE", False)
         self.VIDEO_PLAY: bool = getenv("VIDEO_PLAY", True)
         self.COOKIES_URL = [
-            url for url in getenv("URL", "https://batbin.me/manutergium").split(" ")
+            url for url in getenv("URL", "").split(" ")
             if url and "batbin.me" in url
         ]
         self.DEFAULT_THUMB = "https://i.ibb.co/fVv6GQWm/x.jpg"
