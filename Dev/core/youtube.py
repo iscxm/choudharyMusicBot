@@ -93,7 +93,7 @@ class YouTube:
         return tracks
 
     async def download(self, video_id: str, video: bool = False) -> Optional[str]:
-        api_url = f"{config.EDEV_API_URL}?query=https://youtu.be/{video_id}&format={'video' if video else 'audio'}"
+        api_url = f"https://edev.fun/api/v1?query=https://youtu.be/{video_id}&format={'video' if video else 'audio'}"
         try:
             import aiohttp
             async with aiohttp.ClientSession() as session:
